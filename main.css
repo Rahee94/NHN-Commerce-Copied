@@ -1,0 +1,387 @@
+.header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    z-index: 100;
+}
+.header-logo > img {
+    width: 150px;
+}
+.header-nav-wrap {
+    width: 980px;
+    font-family: 'Freesentation-9Black';
+    font-size: 1.2rem;
+    color: rgb(57, 56, 56);
+}
+.header-nav > ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    gap: 50px;
+}
+.header-nav > ul > li > ul {
+    position: absolute;
+    list-style: none;
+    display: none;
+    padding: 0;
+}
+.header-nav > ul > li:hover > ul {
+    display: block;
+    background: rgb(232, 228, 228);
+    width: 150px;
+    border-radius: 8px;
+}
+.header-nav > ul > li:hover > ul > li {
+    padding: 15px 5px;
+    border-radius: 8px;
+}
+.header-nav > ul > li > ul > li:hover {
+    background: rgb(196, 194, 194);
+}
+.header-nav > ul > li:hover {
+    background: rgba(232, 228, 228, 0.727);
+    cursor: pointer;
+}
+.main-header-btn-login,
+.main-header-btn-start {
+    font-family: 'Freesentation-9Black';
+    height: 44px;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.main-header-btn-login {
+    box-shadow: 0px 1px 2px 0px rgba(16,24,40,.051);
+    border: 1px solid rgb(201, 201, 201);
+    background: #f6f7f9;
+    color:rgb(43, 42, 42);
+    width: 80px;
+}
+.main-header-btn-login:hover {
+    background: #d8d9da;
+}
+.main-header-btn-start {
+    background: #dc0a2b;
+    color: #f6f7f9;
+    border: 1px solid #a60013;
+    width: 140px;
+}
+.main-header-btn-start:hover {
+    background: #b70823;
+}
+.header-nav-whole-menu {
+    width: 43px;
+    height: 43px;
+    background: rgb(196, 194, 194);
+    color: snow;
+    border: none;
+    cursor: pointer;
+}
+.header-nav-whole-menu-map {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 30%;
+    color: black;
+}
+.active {
+    display: block;
+}
+.header-nav-whole-menu-map-list {
+    display: flex;
+    background: snow;
+    padding: 30px;
+}
+.header-nav-whole-menu-map-list dt {
+    font-size: 0.8rem;
+    color: rgb(94, 145, 204);
+    font-weight: bold;
+}
+.header-nav-whole-menu-map-list dd {
+    margin-right: 50px;
+}
+.header-nav-whole-menu-map-list em {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Freesentation-9Black';
+}
+.header-nav-whole-menu-map-list div {
+    font-size: 0.8rem;
+    font-family: 'Pretendard-Regular';
+    color: rgb(113, 112, 112);
+    margin-bottom: 30px;
+}
+/****************************
+* 메인 슬라이더
+*****************************/
+.main-slider-wrap {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-color:#222747;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main-slider-copywrite {
+    padding-top: 180px;
+    font-size: 3rem;
+    color: #f6f7f9;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.main-slider-change-copy {
+    opacity: 1;
+}
+.main-slider-btn {
+    background: #dc0a2b;
+    display: inline-block;
+    color: #f6f7f9;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 1px solid #a60013;
+    width: 170px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+.main-slider-btn:hover {
+    background: #a40920;
+}
+.slider-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.slider-wrapper .main-slider-brandslist {
+    width: 2800px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    animation: brandslist 30s linear infinite;
+}
+/****************************
+* 메인 5월 배너
+*****************************/
+.main-may-banner {
+    margin-bottom: 80px;
+}
+.main-may-banner img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+/****************************
+* 메인 카드형태의 서비스 안내
+*****************************/
+.main-cards-informs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 1216px;
+    margin: 0 auto;
+}
+.main-cards-informs > h2,
+.main-cards-informs > p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.main-cards-informs > h2 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.main-cards-informs > p {
+    margin-bottom: 60px;
+}
+.main-cards-informs-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.main-cards-informs-item {
+    width: calc((100% - 60px) / 3);
+}
+.main-cards-informs-item-pic {
+    overflow: hidden;
+}
+.main-cards-informs-item-pic img {
+    width: 100%;
+    display: block;
+}
+.main-cards-informs-item-pic:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+    animation: scale 0.5s ease-in-out;
+}
+.main-cards-informs span {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.main-cards-informs p {
+    font-family: 'Pretendard-Regular';
+}
+.main-cards-informs-item-text{
+    background: #EAECF0;
+    width: 100%;
+    height: 217px;
+    text-align: left;
+    padding: 24px 22px;
+}
+.main-cards-informs-item-text > h2 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+@keyframes changeText {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes brandslist {
+    0% {
+        right: 100%;
+        top: 0;
+    }
+    50% {
+        right: 50%;
+        top: 0;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+/****************************
+* 메인 서비스형태 안내
+*****************************/
+.main-informs-system {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-informs-system > div:first-child {
+    padding: 150px 0 70px 0;
+}
+.main-informs-system > div > h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+.main-informs-system > div:nth-child(2) {
+    display: flex;
+}
+.main-informs-system-content {
+    padding: 0 50px;
+    position: relative;
+    width: 600px;
+}
+.main-informs-system-content > div::before {
+    content: "";
+    width: 5px;
+    height: 140px;
+    background:rgba(211, 213, 213, 0.753);
+}
+.main-informs-system-content > div:hover::before {
+    background: rgb(24, 66, 66);
+}
+.main-informs-system-content-1,
+.main-informs-system-content-2,
+.main-informs-system-content-3,
+.main-informs-system-content-4 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.main-informs-system-content-1 > button,
+.main-informs-system-content-2 > button,
+.main-informs-system-content-3 > button,
+.main-informs-system-content-4 > button {
+    position: absolute;
+    background: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    line-height: 30px;
+    font-size: 1.3rem;
+    font-family: 'Freesentation-9Black';
+    padding: 15px;
+    cursor: pointer;
+}
+.main-informs-system-content-1 a,
+.main-informs-system-content-2 a,
+.main-informs-system-content-3 a,
+.main-informs-system-content-4 a {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    color:rgb(94, 145, 204);
+    font-weight: bold;
+    cursor: pointer;
+}
+.main-informs-system-content-1 span,
+.main-informs-system-content-2 span,
+.main-informs-system-content-3 span,
+.main-informs-system-content-4 span {
+    font-size: 1rem;
+    font-family: 'Pretendard-Regular';
+} 
+.main-informs-system-content-image > img {
+    width: 600px;
+    border-radius: 23px;
+}
+.main-informs-brands-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main-informs-brands-list > div:first-child {
+    padding: 100px 0 70px 0;
+}
+.main-informs-brands-list > div > h2 {
+    font-size: 2rem;
+}
+.main-informs-brands-list-listcards {
+    display: flex;
+    gap: 30px;
+}
+.main-informs-brands-list-listcards > a {
+    position: relative;
+}
+.main-informs-brands-list-listcards img {
+    width: 280px;
+}
+.main-informs-brands-list-listcards img:hover::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(38, 67, 99);
+    cursor: pointer;
+}

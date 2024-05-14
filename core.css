@@ -1,0 +1,35 @@
+/********************************************
+* 초기화
+*********************************************/
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+}
+/********************************************
+* Header, Main, Footer 공통 (반응형과 무관)
+*********************************************/
+.header-wrap,
+.main-wrap,
+.footer-wrap {
+    width: 100%;
+}
+/********************************************
+* 웹폰트 정의
+*********************************************/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
