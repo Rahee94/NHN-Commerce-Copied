@@ -432,6 +432,7 @@
     color: snow;
     padding-left: 150px;
     padding-bottom: 50px;
+    padding-top: 30px;
 }
 .footer-content-outlink::after {
     content: "";
