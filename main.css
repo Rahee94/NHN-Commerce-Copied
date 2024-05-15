@@ -374,14 +374,94 @@
 .main-informs-brands-list-listcards img {
     width: 280px;
 }
-.main-informs-brands-list-listcards img:hover::before {
-    content: "";
+.main-informs-brands-list-listcards > a:hover::before {
+    content: "사례보기 >";
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgb(38, 67, 99);
+    background:#363D68;
+    color: snow;
+    font-weight: bold;
     cursor: pointer;
+}
+/****************************
+* 메인 semi-footer
+*****************************/
+.main-semi-footer {
+    background: #363D68;
+    color: snow;
+    text-align: center;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.main-semi-footer > h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+.main-semi-footer > p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.main-semi-footer > a > span {
+    background: #dc0a2b;
+    display: inline-block;
+    color: #f6f7f9;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid #a60013;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/****************************
+* 메인-footer
+*****************************/
+.footer {
+    background: #0C111D;
+    color: snow;
+    padding-left: 150px;
+    padding-bottom: 50px;
+}
+.footer-content-outlink::after {
+    content: "";
+    display: inline-block;
+    width: 1300px;
+    border: 0.5px solid #7183ab;
+}
+.footer-content-outlink > dl {
+    display: flex;
+    padding-top: 50px;
+}
+.footer-content-outlink a {
+    color: #7183ab;
+    margin-right: 20px;
+}
+.footer-content-outlink a:hover {
+    color: snow;
+    cursor: pointer;
+}
+.footer-content-contact-logo > img {
+    width: 129px;
+}
+.footer-content-contact > p {
+    color: #7183ab;
+}
+.footer-content-contact > p > span::after {
+    content: "";
+    display: inline-flex;
+    width: 2px;
+    margin: 0 10px;
+    height: 1rem;
+    background: #7183ab;
 }
