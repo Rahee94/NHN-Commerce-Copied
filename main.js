@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
     let menuMap = document.querySelector(".header-nav-whole-menu-map");
 
     wholeMenu.addEventListener("click", () => {
+        console.log("뭐지");
         menuMap.classList.toggle("active");
         //menuMap.style.display = "block";
     });
